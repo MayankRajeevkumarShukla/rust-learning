@@ -4,3 +4,8 @@
 # Ignore build artifacts
 *.exe
 *.pdb
+
+
+# Added by cargo
+
+/target
