@@ -1,0 +1,6 @@
+# Ignore all target folders recursively (in root and subfolders)
+**/target/
+
+# Ignore build artifacts
+*.exe
+*.pdb
