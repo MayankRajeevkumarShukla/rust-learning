@@ -12,5 +12,29 @@ fn main(){
         sign_in_count:1,
 
     };
-    user1.email = String::from("Ag")
+    user1.email = String::from("Ag");
+       let user2 = User {
+        // active: user1.active,
+        // username: user1.username,
+        // email: String::from("another@example.com"),
+        // sign_in_count: user1.sign_in_count,
+        // this can be also retuen as 
+        email:String::from("another@example.com"),
+        ..user1
+    };
+}
+fn build_user(email:String,username:String) ->User{
+    // User{
+    //     activte:true,
+    //     username:username,
+    //     email:email,
+    //     sign_in_count:1,
+    // };
+    // with init shorthand bcoz the fun parameter is same as struct
+    User{
+        activte:true,
+        username,
+        email,
+        sign_in_count:1,
+    }
 }
